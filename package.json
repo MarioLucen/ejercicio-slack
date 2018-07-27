@@ -1,0 +1,18 @@
+{
+  "name": "ejercicio-slack",
+  "version": "1.0.0",
+  "description": "ejercicio para replicar interface de slack",
+  "main": "index.js",
+  "repository": "https://github.com/MarioLucen/ejercicio-slack.git",
+  "author": "MarioLucen <mlucena@islautopia.com>",
+  "license": "MIT",
+  "scripts": {
+    "build-css": "node-sass --output-style compressed scss/main.scss css/main.css",
+    "watch-css": "node-sass scss/main.scss css/main.css --watch",
+    "build": "npm run build-css",
+    "watch": "npm run watch-css"
+  },
+  "dependencies": {
+    "node-sass": "^4.9.2"
+  }
+}
