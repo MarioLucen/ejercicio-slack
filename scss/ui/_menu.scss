@@ -1,0 +1,21 @@
+
+.menu-wrapper {
+    width: 220px;
+    height: 100%;
+    background-color: $purple;
+
+    .tittle-menu {
+        width:  100%;   
+        
+        p {
+            top: 15px;
+            left: 16px;
+            color: $white;
+        }
+
+        i {
+            color: $lightgrey;
+            font-size: 7px;
+        }
+    }
+}
