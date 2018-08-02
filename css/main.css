@@ -1366,12 +1366,45 @@ body {
   width: 220px;
   height: 100%;
   background-color: #4b3a4a; }
-  .menu-wrapper .tittle-menu {
+  .menu-wrapper .button-menu-header {
     width: 100%; }
-    .menu-wrapper .tittle-menu p {
-      top: 15px;
-      left: 16px;
-      color: #ffffff; }
-    .menu-wrapper .tittle-menu i {
+    .menu-wrapper .button-menu-header .tittle-menu {
+      margin-top: -8px; }
+      .menu-wrapper .button-menu-header .tittle-menu p {
+        padding-top: 15px;
+        padding-left: 16px;
+        color: #ffffff;
+        font-size: 14px;
+        font-weight: 900; }
+      .menu-wrapper .button-menu-header .tittle-menu i {
+        position: absolute;
+        margin-top: -10px;
+        margin-left: 89px;
+        color: #d4d2d4;
+        font-size: 7px; }
+    .menu-wrapper .button-menu-header .name {
+      margin-top: 5px; }
+      .menu-wrapper .button-menu-header .name div {
+        width: 6px;
+        height: 6px;
+        margin-left: 17px;
+        margin-bottom: -11px;
+        background-color: #52928c;
+        border-radius: 50%; }
+      .menu-wrapper .button-menu-header .name p {
+        color: #a49da4;
+        font-size: 12px;
+        font-weight: 300i;
+        margin-top: -2px;
+        margin-left: 30px; }
+      .menu-wrapper .button-menu-header .name i {
+        margin-left: 65px;
+        font-size: 10px;
+        margin-top: -13px;
+        color: #b2975c; }
+    .menu-wrapper .button-menu-header i {
+      position: absolute;
+      font-size: 14px;
       color: #d4d2d4;
-      font-size: 7px; }
+      margin-left: 193px;
+      margin-top: -15px; }
