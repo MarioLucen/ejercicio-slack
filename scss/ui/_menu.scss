@@ -13,7 +13,7 @@
             
             p {
                 padding-top: 15px;
-                padding-left: 16px;
+                padding-left: $margin-left;
                 color: $white;
                 font-size: 14px;
                 font-weight: 900;
@@ -29,7 +29,7 @@
         } 
 
         .name {
-                margin-top: 5px;
+                margin-top: 6px;
 
                 div {
                     width: 6px;
@@ -50,7 +50,8 @@
                 }
 
                 i {
-                    margin-left: 65px;
+                    margin-left:
+                     65px;
                     font-size: 10px;
                     margin-top: -13px;
                     color: #b2975c;
@@ -64,5 +65,28 @@
             margin-left: 193px;
             margin-top: -15px;
         }   
+    }
+
+    .jump-to {
+
+        input {
+            width: 190px;
+            height: 25px;
+            margin-top: 16px;
+            margin-left: $margin-left;
+            border-radius: 2px;
+            background-color: $darkpurple;
+            border: none;
+            padding-left: 30px;
+        }
+
+        i {
+            position: absolute;
+            margin-top: 21px;
+            margin-left: -182px;
+            color: $lightpurple;
+            font-size: 14px;
+
+        }
     }
 }
