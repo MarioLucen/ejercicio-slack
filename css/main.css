@@ -1363,10 +1363,11 @@ body {
   font-size: 10px; }
 
 .menu-wrapper {
-  width: 220px;
+  width: 200px;
   height: 100%;
   background-color: #4b3a4a; }
   .menu-wrapper .button-menu-header {
+    position: relative;
     width: 100%; }
     .menu-wrapper .button-menu-header .tittle-menu {
       margin-top: -8px; }
@@ -1379,11 +1380,11 @@ body {
       .menu-wrapper .button-menu-header .tittle-menu i {
         position: absolute;
         margin-top: -10px;
-        margin-left: 89px;
+        right: 105px;
         color: #d4d2d4;
         font-size: 7px; }
     .menu-wrapper .button-menu-header .name {
-      margin-top: 6px; }
+      margin-top: 10px; }
       .menu-wrapper .button-menu-header .name div {
         width: 6px;
         height: 6px;
@@ -1396,9 +1397,9 @@ body {
         font-size: 12px;
         font-weight: 300i;
         margin-top: -2px;
-        margin-left: 30px; }
+        margin-left: 28px; }
       .menu-wrapper .button-menu-header .name i {
-        margin-left: 65px;
+        right: 126px;
         font-size: 10px;
         margin-top: -13px;
         color: #b2975c; }
@@ -1406,20 +1407,68 @@ body {
       position: absolute;
       font-size: 14px;
       color: #d4d2d4;
-      margin-left: 193px;
+      right: 17px;
       margin-top: -15px; }
-  .menu-wrapper .jump-to input {
-    width: 190px;
-    height: 25px;
-    margin-top: 16px;
-    margin-left: 16px;
-    border-radius: 2px;
-    background-color: #322131;
-    border: none;
-    padding-left: 30px; }
-  .menu-wrapper .jump-to i {
-    position: absolute;
-    margin-top: 21px;
-    margin-left: -182px;
-    color: #a49da4;
-    font-size: 14px; }
+  .menu-wrapper .jump-to {
+    position: relative; }
+    .menu-wrapper .jump-to input {
+      width: 170px;
+      height: 25px;
+      margin-top: 16px;
+      margin-left: 16px;
+      padding-left: 30px;
+      border-radius: 2px;
+      background-color: #322131;
+      border: none; }
+    .menu-wrapper .jump-to i {
+      position: absolute;
+      margin-top: 21px;
+      margin-left: -162px;
+      color: #a49da4;
+      font-size: 14px; }
+  .menu-wrapper .all-threads {
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 8px; }
+    .menu-wrapper .all-threads p {
+      color: #a49da4;
+      font-size: 14px;
+      margin-left: 38px; }
+    .menu-wrapper .all-threads i {
+      position: absolute;
+      color: #a49da4;
+      font-size: 14px;
+      margin-top: -16px;
+      margin-left: 19px; }
+  .menu-wrapper .channels {
+    position: relative; }
+    .menu-wrapper .channels p {
+      color: #a49da4;
+      font-size: 12px;
+      margin-left: 16px;
+      margin-top: 10px; }
+    .menu-wrapper .channels .circle-plus {
+      position: absolute;
+      width: 12px;
+      height: 12px;
+      right: 17px;
+      margin-top: -14px;
+      border-radius: 50%;
+      border: 1px solid #a49da4;
+      color: #a49da4; }
+      .menu-wrapper .channels .circle-plus p {
+        margin-left: 2px;
+        margin-top: -3px; }
+    .menu-wrapper .channels .item {
+      margin-left: 2px;
+      margin-bottom: -1px; }
+      .menu-wrapper .channels .item:nth-child(9) p {
+        margin-left: 27px; }
+      .menu-wrapper .channels .item:nth-child(10) p {
+        margin-left: 27px; }
+      .menu-wrapper .channels .item i {
+        position: absolute;
+        color: #a49da4;
+        font-size: 12px;
+        margin-top: 10px;
+        margin-left: 14px; }

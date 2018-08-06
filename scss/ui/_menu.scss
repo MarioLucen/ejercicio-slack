@@ -1,10 +1,11 @@
 
 .menu-wrapper {
-    width: 220px;
+    width: 200px;
     height: 100%;
     background-color: $purple;
 
     .button-menu-header {
+        position: relative;
         width:  100%;
         // height: 67px;   
         
@@ -22,14 +23,14 @@
             i {
                 position: absolute;
                 margin-top: -10px;
-                margin-left: 89px;
+                right: 105px;
                 color: $lightgrey;
                 font-size: 7px;
             }
         } 
 
         .name {
-                margin-top: 6px;
+                margin-top: 10px;
 
                 div {
                     width: 6px;
@@ -46,12 +47,11 @@
                     font-size: 12px;
                     font-weight: 300i;
                     margin-top: -2px;
-                    margin-left: 30px;
+                    margin-left: 28px;
                 }
 
                 i {
-                    margin-left:
-                     65px;
+                    right: 126px;
                     font-size: 10px;
                     margin-top: -13px;
                     color: #b2975c;
@@ -62,31 +62,99 @@
             position: absolute;
             font-size: 14px;
             color: $lightgrey;
-            margin-left: 193px;
+            right: 17px;
             margin-top: -15px;
         }   
     }
 
     .jump-to {
-
+        position: relative;
+        
         input {
-            width: 190px;
+            width: 170px;
             height: 25px;
             margin-top: 16px;
             margin-left: $margin-left;
+            padding-left: 30px;
             border-radius: 2px;
             background-color: $darkpurple;
             border: none;
-            padding-left: 30px;
         }
 
         i {
             position: absolute;
             margin-top: 21px;
-            margin-left: -182px;
+            margin-left: -162px;
             color: $lightpurple;
             font-size: 14px;
 
+        }
+    }
+
+    .all-threads {
+        width: 100%;
+        margin-top: 15px;
+        margin-bottom: 8px;
+        p {
+            color: $lightpurple;
+            font-size: 14px;
+            margin-left: 38px 
+        }
+
+        i {
+            position: absolute;
+            color: $lightpurple;
+            font-size: 14px;
+            margin-top: -16px;
+            margin-left: 19px;
+        }
+    }
+
+    .channels {
+        position: relative;
+
+        p {
+            color: $lightpurple;
+            font-size: 12px;
+            margin-left: $margin-left;
+            margin-top: 10px;
+        }
+
+        .circle-plus {
+            position: absolute;
+            width: 12px;
+            height: 12px;
+            right: 17px;
+            margin-top: -14px;
+            border-radius: 50%;
+            border: 1px solid $lightpurple;
+            color: $lightpurple;
+
+            p {
+                margin-left: 2px;
+                margin-top: -3px;
+            }
+        }
+
+        .item {
+            margin-left: 2px;
+            margin-bottom: -1px;
+
+            &:nth-child(9) p {
+                margin-left: 27px; 
+            }
+
+            &:nth-child(10) p {
+                margin-left: 27px; 
+            }
+
+            i{
+                position: absolute;
+                color: $lightpurple;
+                font-size: 12px;
+                margin-top: 10px;
+                margin-left: 14px;
+            }
         }
     }
 }
