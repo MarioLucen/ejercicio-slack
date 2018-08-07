@@ -33,8 +33,8 @@
                 margin-top: 10px;
 
                 div {
-                    width: 6px;
-                    height: 6px;
+                    width: 8px;
+                    height: 8px;
                     margin-left: 17px;
                     margin-bottom: -11px;
                     background-color: $turquoise;
@@ -47,7 +47,7 @@
                     font-size: 12px;
                     font-weight: 300i;
                     margin-top: -2px;
-                    margin-left: 28px;
+                    margin-left: 30px;
                 }
 
                 i {
@@ -110,6 +110,52 @@
         }
     }
 
+    .invite {
+        width: 100%;
+        margin-top: 15px;
+        margin-bottom: 8px;
+
+        p {
+            color: $lightpurple;
+            font-size: 12px;
+            margin-left: 29px;
+            
+            &:last-child {
+                position: absolute;
+                margin-left: 19px;
+                margin-top: -15px;
+            }
+        }
+    }
+    .apps {
+        position: relative;
+        width: 100%;
+        margin-top: 15px;
+        margin-bottom: 8px;
+
+        p {
+            color: $lightpurple;
+            font-size: 12px;
+            margin-left: 20px;
+        }
+
+        .circle-plus {
+            position: absolute;
+            width: 12px;
+            height: 12px;
+            right: 17px;
+            margin-top: -14px;
+            border-radius: 50%;
+            border: 1px solid $lightpurple;
+            color: $lightpurple;
+            
+            p {
+                margin-left: 2px;
+                margin-top: -3px;
+            }
+        }  
+    }
+
     .channels {
         position: relative;
 
@@ -140,6 +186,8 @@
             margin-left: 2px;
             margin-bottom: -1px;
 
+            &:nth-child(3) p { color: $white; }
+
             &:nth-child(9) p {
                 margin-left: 27px; 
             }
@@ -157,4 +205,173 @@
             }
         }
     }
+
+    .messages {
+        position: relative;
+        color: $lightpurple;
+        font-size: 12px;
+        margin-left: $margin-left;
+        margin-top: 29px;
+
+        li {
+            margin-bottom: 10px;
+
+        }
+
+        
+        .tittle-messages {
+            
+            .circle-plus {
+                position: absolute;
+                width: 12px;
+                height: 12px;
+                right: 17px;
+                margin-top: -14px;
+                border-radius: 50%;
+                border: 1px solid $lightpurple;
+                color: $lightpurple;
+                
+                p {
+                    margin-left: 2px;
+                    margin-top: -3px;
+                }
+            }  
+            
+        }
+        
+        i {
+            position: absolute;
+            font-size: 10px;
+            color: $turquoise;
+        }
+        
+        .users {
+            
+            p { margin-left: 13px; }
+
+            &:nth-child(8) {
+                
+                background-color: $turquoise;
+            
+                p{
+                    color: $white;
+                }
+            }
+           
+            .im-heart { margin-top: 3px; }
+            
+            .im-thumb-up {
+                margin-left: 80px;
+                margin-top: -13px; 
+                color: #b2975c;
+            }
+
+            .im-home {
+                margin-left: 84px;
+                margin-top: -13px; 
+                color: #a68b7f;
+            }
+
+            .im-sun {
+                margin-left: 105px;
+                margin-top: -12px; 
+                color:  #9e7d72;
+            }
+
+            .im-smiley-o {
+                margin-left: 132px;
+                margin-top: -12px; 
+                color:  #bca770;
+            }
+
+            .circle-green {
+                position: absolute;
+                width: 8px;
+                height: 8px;
+                margin-left: 1px;
+                margin-top: -11px;
+                background-color: $turquoise;
+                border-radius: 50%;
+            }
+
+            .circle-empty {
+                position: absolute;
+                width: 8px;
+                height: 8px;
+                margin-left: 2px;
+                margin-top: -10px;
+                border: 1px solid $lightpurple;
+                background-color: transparent;
+                border-radius: 50%;
+
+                &.sleep p {
+                    margin-left: 4px;
+                    margin-top: -6px;
+                    font-size: 9px;
+                    text-shadow:
+                                    -1px -1px 0 $purple,  
+                                    1px -1px 0 $purple,
+                                    -1px 1px 0 $purple,
+                                    1px 1px 0 $purple;
+                }
+            }
+
+            .circle-white {
+                position: absolute;
+                width: 8px;
+                height: 8px;
+                margin-left: 1px;
+                margin-top: -11px;
+                background-color: $white;
+                border-radius: 50%;
+            }
+
+            .square-number {
+                position: absolute;
+                width: 8px;
+                height: 9px;
+                margin-left: 2px;
+                margin-top: -11px;
+                border: 1px solid $lightpurple;
+                background-color: transparent;
+                border-radius: 2px;
+
+                p {
+                    margin-left: 1px;
+                    font-size: 6px;
+                    margin-top: 0;
+                }
+            }
+        }
+    }
+    
+    .special-user {
+        height: 25px;
+        margin-left: -17px;
+        background-color: $turquoise;
+
+        .im-phone {
+            margin-left: 99px;
+            margin-top: -13px; 
+            color: transparent;
+            text-shadow:6px 0px 0px $lightgrey;
+        }
+
+        p {
+            margin-left: 30px;
+            padding-top: 5px;
+            color: $white;
+        }
+
+        .circle-white {
+            position: absolute;
+            width: 8px;
+            height: 8px;
+            margin-left: 18px;
+            margin-top: -11px;
+            background-color: $white;
+            border-radius: 50%;
+        }
+    }
+
 }

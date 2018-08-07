@@ -1386,8 +1386,8 @@ body {
     .menu-wrapper .button-menu-header .name {
       margin-top: 10px; }
       .menu-wrapper .button-menu-header .name div {
-        width: 6px;
-        height: 6px;
+        width: 8px;
+        height: 8px;
         margin-left: 17px;
         margin-bottom: -11px;
         background-color: #52928c;
@@ -1397,7 +1397,7 @@ body {
         font-size: 12px;
         font-weight: 300i;
         margin-top: -2px;
-        margin-left: 28px; }
+        margin-left: 30px; }
       .menu-wrapper .button-menu-header .name i {
         right: 126px;
         font-size: 10px;
@@ -1440,6 +1440,39 @@ body {
       font-size: 14px;
       margin-top: -16px;
       margin-left: 19px; }
+  .menu-wrapper .invite {
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 8px; }
+    .menu-wrapper .invite p {
+      color: #a49da4;
+      font-size: 12px;
+      margin-left: 29px; }
+      .menu-wrapper .invite p:last-child {
+        position: absolute;
+        margin-left: 19px;
+        margin-top: -15px; }
+  .menu-wrapper .apps {
+    position: relative;
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 8px; }
+    .menu-wrapper .apps p {
+      color: #a49da4;
+      font-size: 12px;
+      margin-left: 20px; }
+    .menu-wrapper .apps .circle-plus {
+      position: absolute;
+      width: 12px;
+      height: 12px;
+      right: 17px;
+      margin-top: -14px;
+      border-radius: 50%;
+      border: 1px solid #a49da4;
+      color: #a49da4; }
+      .menu-wrapper .apps .circle-plus p {
+        margin-left: 2px;
+        margin-top: -3px; }
   .menu-wrapper .channels {
     position: relative; }
     .menu-wrapper .channels p {
@@ -1462,6 +1495,8 @@ body {
     .menu-wrapper .channels .item {
       margin-left: 2px;
       margin-bottom: -1px; }
+      .menu-wrapper .channels .item:nth-child(3) p {
+        color: #ffffff; }
       .menu-wrapper .channels .item:nth-child(9) p {
         margin-left: 27px; }
       .menu-wrapper .channels .item:nth-child(10) p {
@@ -1472,3 +1507,115 @@ body {
         font-size: 12px;
         margin-top: 10px;
         margin-left: 14px; }
+  .menu-wrapper .messages {
+    position: relative;
+    color: #a49da4;
+    font-size: 12px;
+    margin-left: 16px;
+    margin-top: 29px; }
+    .menu-wrapper .messages li {
+      margin-bottom: 10px; }
+    .menu-wrapper .messages .tittle-messages .circle-plus {
+      position: absolute;
+      width: 12px;
+      height: 12px;
+      right: 17px;
+      margin-top: -14px;
+      border-radius: 50%;
+      border: 1px solid #a49da4;
+      color: #a49da4; }
+      .menu-wrapper .messages .tittle-messages .circle-plus p {
+        margin-left: 2px;
+        margin-top: -3px; }
+    .menu-wrapper .messages i {
+      position: absolute;
+      font-size: 10px;
+      color: #52928c; }
+    .menu-wrapper .messages .users p {
+      margin-left: 13px; }
+    .menu-wrapper .messages .users:nth-child(8) {
+      background-color: #52928c; }
+      .menu-wrapper .messages .users:nth-child(8) p {
+        color: #ffffff; }
+    .menu-wrapper .messages .users .im-heart {
+      margin-top: 3px; }
+    .menu-wrapper .messages .users .im-thumb-up {
+      margin-left: 80px;
+      margin-top: -13px;
+      color: #b2975c; }
+    .menu-wrapper .messages .users .im-home {
+      margin-left: 84px;
+      margin-top: -13px;
+      color: #a68b7f; }
+    .menu-wrapper .messages .users .im-sun {
+      margin-left: 105px;
+      margin-top: -12px;
+      color: #9e7d72; }
+    .menu-wrapper .messages .users .im-smiley-o {
+      margin-left: 132px;
+      margin-top: -12px;
+      color: #bca770; }
+    .menu-wrapper .messages .users .circle-green {
+      position: absolute;
+      width: 8px;
+      height: 8px;
+      margin-left: 1px;
+      margin-top: -11px;
+      background-color: #52928c;
+      border-radius: 50%; }
+    .menu-wrapper .messages .users .circle-empty {
+      position: absolute;
+      width: 8px;
+      height: 8px;
+      margin-left: 2px;
+      margin-top: -10px;
+      border: 1px solid #a49da4;
+      background-color: transparent;
+      border-radius: 50%; }
+      .menu-wrapper .messages .users .circle-empty.sleep p {
+        margin-left: 4px;
+        margin-top: -6px;
+        font-size: 9px;
+        text-shadow: -1px -1px 0 #4b3a4a, 1px -1px 0 #4b3a4a, -1px 1px 0 #4b3a4a, 1px 1px 0 #4b3a4a; }
+    .menu-wrapper .messages .users .circle-white {
+      position: absolute;
+      width: 8px;
+      height: 8px;
+      margin-left: 1px;
+      margin-top: -11px;
+      background-color: #ffffff;
+      border-radius: 50%; }
+    .menu-wrapper .messages .users .square-number {
+      position: absolute;
+      width: 8px;
+      height: 9px;
+      margin-left: 2px;
+      margin-top: -11px;
+      border: 1px solid #a49da4;
+      background-color: transparent;
+      border-radius: 2px; }
+      .menu-wrapper .messages .users .square-number p {
+        margin-left: 1px;
+        font-size: 6px;
+        margin-top: 0; }
+  .menu-wrapper .special-user {
+    height: 25px;
+    margin-left: -17px;
+    background-color: #52928c; }
+    .menu-wrapper .special-user .im-phone {
+      margin-left: 99px;
+      margin-top: -13px;
+      color: transparent;
+      text-shadow: 6px 0px 0px #d4d2d4; }
+    .menu-wrapper .special-user p {
+      margin-left: 30px;
+      padding-top: 5px;
+      color: #ffffff; }
+    .menu-wrapper .special-user .circle-white {
+      position: absolute;
+      width: 8px;
+      height: 8px;
+      margin-left: 18px;
+      margin-top: -11px;
+      background-color: #ffffff;
+      border-radius: 50%; }
