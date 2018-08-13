@@ -1362,10 +1362,21 @@ body {
   font-weight: 400;
   font-size: 10px; }
 
+.aplication-container {
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden; }
+
 .menu-wrapper {
+  position: absolute;
   width: 200px;
-  height: 100%;
-  background-color: #4b3a4a; }
+  height: calc(100% - 22px);
+  background-color: #4b3a4a;
+  overflow-x: hidden;
+  overflow-y: scroll; }
   .menu-wrapper .button-menu-header {
     position: relative;
     width: 100%; }
@@ -1380,7 +1391,7 @@ body {
       .menu-wrapper .button-menu-header .tittle-menu i {
         position: absolute;
         margin-top: -10px;
-        right: 105px;
+        right: 89px;
         color: #d4d2d4;
         font-size: 7px; }
     .menu-wrapper .button-menu-header .name {
@@ -1393,37 +1404,37 @@ body {
         background-color: #52928c;
         border-radius: 50%; }
       .menu-wrapper .button-menu-header .name p {
+        margin-top: -2px;
+        margin-left: 30px;
         color: #a49da4;
         font-size: 12px;
-        font-weight: 300i;
-        margin-top: -2px;
-        margin-left: 30px; }
+        font-weight: 300i; }
       .menu-wrapper .button-menu-header .name i {
-        right: 126px;
-        font-size: 10px;
         margin-top: -13px;
+        right: 108px;
+        font-size: 10px;
         color: #b2975c; }
     .menu-wrapper .button-menu-header i {
       position: absolute;
-      font-size: 14px;
-      color: #d4d2d4;
+      margin-top: -15px;
       right: 17px;
-      margin-top: -15px; }
+      font-size: 14px;
+      color: #d4d2d4; }
   .menu-wrapper .jump-to {
     position: relative; }
     .menu-wrapper .jump-to input {
-      width: 170px;
+      width: 158px;
       height: 25px;
       margin-top: 16px;
       margin-left: 16px;
       padding-left: 30px;
       border-radius: 2px;
-      background-color: #322131;
-      border: none; }
+      border: none;
+      background-color: #322131; }
     .menu-wrapper .jump-to i {
       position: absolute;
-      margin-top: 21px;
-      margin-left: -162px;
+      margin-top: 22px;
+      margin-left: -151px;
       color: #a49da4;
       font-size: 14px; }
   .menu-wrapper .all-threads {
@@ -1431,36 +1442,35 @@ body {
     margin-top: 15px;
     margin-bottom: 8px; }
     .menu-wrapper .all-threads p {
+      margin-left: 38px;
       color: #a49da4;
-      font-size: 14px;
-      margin-left: 38px; }
+      font-size: 14px; }
     .menu-wrapper .all-threads i {
       position: absolute;
-      color: #a49da4;
-      font-size: 14px;
       margin-top: -16px;
-      margin-left: 19px; }
+      margin-left: 19px;
+      color: #a49da4;
+      font-size: 14px; }
   .menu-wrapper .invite {
     width: 100%;
     margin-top: 15px;
     margin-bottom: 8px; }
     .menu-wrapper .invite p {
-      color: #a49da4;
+      margin-left: 29px;
       font-size: 12px;
-      margin-left: 29px; }
+      color: #a49da4; }
       .menu-wrapper .invite p:last-child {
         position: absolute;
         margin-left: 19px;
         margin-top: -15px; }
   .menu-wrapper .apps {
-    position: relative;
-    width: 100%;
     margin-top: 15px;
-    margin-bottom: 8px; }
+    margin-bottom: 8px;
+    width: 100%; }
     .menu-wrapper .apps p {
+      margin-left: 20px;
       color: #a49da4;
-      font-size: 12px;
-      margin-left: 20px; }
+      font-size: 12px; }
     .menu-wrapper .apps .circle-plus {
       position: absolute;
       width: 12px;
@@ -1476,16 +1486,16 @@ body {
   .menu-wrapper .channels {
     position: relative; }
     .menu-wrapper .channels p {
-      color: #a49da4;
-      font-size: 12px;
       margin-left: 16px;
-      margin-top: 10px; }
+      margin-top: 10px;
+      color: #a49da4;
+      font-size: 12px; }
     .menu-wrapper .channels .circle-plus {
       position: absolute;
+      margin-top: -14px;
+      right: 17px;
       width: 12px;
       height: 12px;
-      right: 17px;
-      margin-top: -14px;
       border-radius: 50%;
       border: 1px solid #a49da4;
       color: #a49da4; }
@@ -1503,27 +1513,27 @@ body {
         margin-left: 27px; }
       .menu-wrapper .channels .item i {
         position: absolute;
-        color: #a49da4;
-        font-size: 12px;
         margin-top: 10px;
-        margin-left: 14px; }
+        margin-left: 14px;
+        font-size: 12px;
+        color: #a49da4; }
   .menu-wrapper .messages {
     position: relative;
-    color: #a49da4;
-    font-size: 12px;
     margin-left: 16px;
-    margin-top: 29px; }
+    margin-top: 29px;
+    font-size: 12px;
+    color: #a49da4; }
     .menu-wrapper .messages li {
       margin-bottom: 10px; }
     .menu-wrapper .messages .tittle-messages .circle-plus {
       position: absolute;
       width: 12px;
       height: 12px;
-      right: 17px;
       margin-top: -14px;
+      right: 17px;
+      color: #a49da4;
       border-radius: 50%;
-      border: 1px solid #a49da4;
-      color: #a49da4; }
+      border: 1px solid #a49da4; }
       .menu-wrapper .messages .tittle-messages .circle-plus p {
         margin-left: 2px;
         margin-top: -3px; }
@@ -1537,6 +1547,12 @@ body {
       background-color: #52928c; }
       .menu-wrapper .messages .users:nth-child(8) p {
         color: #ffffff; }
+    .menu-wrapper .messages .users:nth-child(5) p {
+      color: #7a6977; }
+    .menu-wrapper .messages .users:nth-child(7) p {
+      color: #7a6977; }
+    .menu-wrapper .messages .users:nth-child(11) p {
+      color: #7a6977; }
     .menu-wrapper .messages .users .im-heart {
       margin-top: 3px; }
     .menu-wrapper .messages .users .im-thumb-up {
@@ -1579,10 +1595,10 @@ body {
         text-shadow: -1px -1px 0 #4b3a4a, 1px -1px 0 #4b3a4a, -1px 1px 0 #4b3a4a, 1px 1px 0 #4b3a4a; }
     .menu-wrapper .messages .users .circle-white {
       position: absolute;
-      width: 8px;
-      height: 8px;
       margin-left: 1px;
       margin-top: -11px;
+      width: 8px;
+      height: 8px;
       background-color: #ffffff;
       border-radius: 50%; }
     .menu-wrapper .messages .users .square-number {
@@ -1619,3 +1635,144 @@ body {
       margin-top: -11px;
       background-color: #ffffff;
       border-radius: 50%; }
+
+.header-chat {
+  position: absolute;
+  height: 54px;
+  border-bottom: 1px solid #d4d2d4;
+  width: calc(100% - 200px);
+  left: 200px;
+  top: 22px;
+  padding: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .header-chat .user-info {
+    display: inline-block; }
+    .header-chat .user-info h3 {
+      font-size: 14px;
+      font-weight: 900; }
+    .header-chat .user-info li {
+      height: 10px; }
+    .header-chat .user-info p {
+      color: #929294; }
+    .header-chat .user-info li:first-child {
+      margin-right: 68px; }
+      .header-chat .user-info li:first-child i {
+        position: absolute;
+        font-size: 12px;
+        color: #929294;
+        margin-right: 5px;
+        margin-top: 4px; }
+    .header-chat .user-info li:nth-child(2) {
+      border-left: 1px solid grey;
+      margin-left: 18px;
+      margin-top: -4px; }
+      .header-chat .user-info li:nth-child(2) .circle-green {
+        position: absolute;
+        width: 9px;
+        height: 9px;
+        margin-left: 5px;
+        background-color: #97c9a5;
+        border-radius: 50%; }
+      .header-chat .user-info li:nth-child(2) p {
+        position: absolute;
+        margin-left: 18px;
+        margin-top: -2px; }
+    .header-chat .user-info li:last-child {
+      position: absolute;
+      margin-top: -10px;
+      border-left: 1px solid #929294;
+      margin-left: 68px; }
+      .header-chat .user-info li:last-child p {
+        margin-top: -2px;
+        margin-left: 6px; }
+  .header-chat .toolbar {
+    display: inline-block; }
+    .header-chat .toolbar ul {
+      display: flex; }
+      .header-chat .toolbar ul li {
+        margin-left: 6px; }
+      .header-chat .toolbar ul li:nth-child(2) button {
+        background-color: #989a9b;
+        border-radius: 2px; }
+        .header-chat .toolbar ul li:nth-child(2) button i {
+          color: #ffffff; }
+  .header-chat .search {
+    color: #989a9b; }
+    .header-chat .search i {
+      position: absolute;
+      font-size: 12px;
+      margin-top: -15px;
+      margin-left: 5px; }
+    .header-chat .search input {
+      width: 150px;
+      height: 19px;
+      border-radius: 2px;
+      border: 0.5px solid #989a9b;
+      padding-left: 20px; }
+
+.btn {
+  position: relative;
+  min-width: 16px;
+  min-height: 16px; }
+  .btn:hover {
+    cursor: pointer; }
+  .btn.icon {
+    width: 18px;
+    height: 18px; }
+    .btn.icon i {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      font-size: 14px;
+      color: #989a9b;
+      transform: translate3d(-50%, -50%, 0); }
+
+.menu-right {
+  height: 100%;
+  left: calc(100% - 275px);
+  top: 76px;
+  width: 275px;
+  display: flex;
+  position: absolute;
+  border-left: 1px solid #d4d2d4; }
+  .menu-right .main-menu {
+    width: 100%; }
+    .menu-right .main-menu .info-contact {
+      border-bottom: 1px solid #d4d2d4; }
+      .menu-right .main-menu .info-contact .close {
+        height: 35px;
+        border-bottom: 1px solid #d4d2d4;
+        background-color: #f9f9f9; }
+        .menu-right .main-menu .info-contact .close p {
+          padding: 8px;
+          font-size: 14px;
+          font-weight: 900; }
+        .menu-right .main-menu .info-contact .close button {
+          left: 250px;
+          position: absolute;
+          top: 9px; }
+          .menu-right .main-menu .info-contact .close button i {
+            font-size: 14px;
+            color: #989a9b; }
+      .menu-right .main-menu .info-contact .profile {
+        height: 50px;
+        border-bottom: 1px solid #d4d2d4;
+        padding: 8px; }
+        .menu-right .main-menu .info-contact .profile img {
+          width: 48px;
+          height: 38px;
+          border-radius: 2px;
+          margin-top: -2px; }
+        .menu-right .main-menu .info-contact .profile p {
+          font-size: 12px;
+          font-weight: 900;
+          width: 80px; }
+
+.main-chat {
+  width: calc(100% - 475px);
+  height: 100%;
+  position: absolute;
+  right: 275px;
+  top: 76px; }

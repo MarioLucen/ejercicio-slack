@@ -1,377 +1,384 @@
 
 .menu-wrapper {
+	position: absolute;
     width: 200px;
-    height: 100%;
-    background-color: $purple;
+    height: calc(100% - 22px);
+    background-color: #4b3a4a;
+    overflow-x: hidden;
+    overflow-y: scroll;
 
-    .button-menu-header {
-        position: relative;
-        width:  100%;
-        // height: 67px;   
-        
-        .tittle-menu {
-            margin-top: -8px;
-            
-            p {
-                padding-top: 15px;
-                padding-left: $margin-left;
-                color: $white;
-                font-size: 14px;
-                font-weight: 900;
-            }
+	.button-menu-header {
+		position: relative;
+		width:  100%;
+		// height: 67px;   
+		
+		.tittle-menu {
+			margin-top: -8px;
+			
+			p {
+				padding-top: 15px;
+				padding-left: $margin-left;
+				color: $white;
+				font-size: 14px;
+				font-weight: 900;
+			}
 
-            i {
-                position: absolute;
-                margin-top: -10px;
-                right: 105px;
-                color: $lightgrey;
-                font-size: 7px;
-            }
-        } 
+			i {
+				position: absolute;
+				margin-top: -10px;
+				right: 89px;
+				color: $lightgrey;
+				font-size: 7px;
+			}
+		} 
 
-        .name {
-                margin-top: 10px;
+		.name {
+			margin-top: 10px;
 
-                div {
-                    width: 8px;
-                    height: 8px;
-                    margin-left: 17px;
-                    margin-bottom: -11px;
-                    background-color: $turquoise;
-                    border-radius: 50%;
-                }
+			div {
+				width: 8px;
+				height: 8px;
+				margin-left: 17px;
+				margin-bottom: -11px;
+				background-color: $turquoise;
+				border-radius: 50%;
+			}
 
-                p {
-                    // position: absolute;
-                    color: $lightpurple;
-                    font-size: 12px;
-                    font-weight: 300i;
-                    margin-top: -2px;
-                    margin-left: 30px;
-                }
+			p {
+				// position: absolute;
+				margin-top: -2px;
+				margin-left: 30px;
+				color: $lightpurple;
+				font-size: 12px;
+				font-weight: 300i;
+			}
 
-                i {
-                    right: 126px;
-                    font-size: 10px;
-                    margin-top: -13px;
-                    color: #b2975c;
-                }
-        }
-        
-        i {
-            position: absolute;
-            font-size: 14px;
-            color: $lightgrey;
-            right: 17px;
-            margin-top: -15px;
-        }   
-    }
+			i {
+				margin-top: -13px;
+				right: 108px;
+				font-size: 10px;
+				color: #b2975c;
+			}
+		}
+		
+		i {
+			position: absolute;
+			margin-top: -15px;
+			right: 17px;
+			font-size: 14px;
+			color: $lightgrey;
+		}   
+	}
 
-    .jump-to {
-        position: relative;
-        
-        input {
-            width: 170px;
-            height: 25px;
-            margin-top: 16px;
-            margin-left: $margin-left;
-            padding-left: 30px;
-            border-radius: 2px;
-            background-color: $darkpurple;
-            border: none;
-        }
+	.jump-to {
+		position: relative;
+		
+		input {
+			width: 158px;
+			height: 25px;
+			margin-top: 16px;
+			margin-left: $margin-left;
+			padding-left: 30px;
+			border-radius: 2px;
+			border: none;
+			background-color: $darkpurple;
+		}
 
-        i {
-            position: absolute;
-            margin-top: 21px;
-            margin-left: -162px;
-            color: $lightpurple;
-            font-size: 14px;
+		i {
+			position: absolute;
+			margin-top: 22px;
+			margin-left: -151px;
+			color: $lightpurple;
+			font-size: 14px;
 
-        }
-    }
+		}
+	}
 
-    .all-threads {
-        width: 100%;
-        margin-top: 15px;
-        margin-bottom: 8px;
-        p {
-            color: $lightpurple;
-            font-size: 14px;
-            margin-left: 38px 
-        }
+	.all-threads {
+		width: 100%;
+		margin-top: 15px;
+		margin-bottom: 8px;
 
-        i {
-            position: absolute;
-            color: $lightpurple;
-            font-size: 14px;
-            margin-top: -16px;
-            margin-left: 19px;
-        }
-    }
+		p {
+			margin-left: 38px;
+			color: $lightpurple;
+			font-size: 14px;
+		}
 
-    .invite {
-        width: 100%;
-        margin-top: 15px;
-        margin-bottom: 8px;
+		i {
+			position: absolute;
+			margin-top: -16px;
+			margin-left: 19px;
+			color: $lightpurple;
+			font-size: 14px;
+		}
+	}
 
-        p {
-            color: $lightpurple;
-            font-size: 12px;
-            margin-left: 29px;
-            
-            &:last-child {
-                position: absolute;
-                margin-left: 19px;
-                margin-top: -15px;
-            }
-        }
-    }
-    .apps {
-        position: relative;
-        width: 100%;
-        margin-top: 15px;
-        margin-bottom: 8px;
+	.invite {
+		width: 100%;
+		margin-top: 15px;
+		margin-bottom: 8px;
 
-        p {
-            color: $lightpurple;
-            font-size: 12px;
-            margin-left: 20px;
-        }
+		p {
+			margin-left: 29px;
+			font-size: 12px;
+			color: $lightpurple;
+				
+			&:last-child {
+				position: absolute;
+				margin-left: 19px;
+				margin-top: -15px;
+				}
+		}
+	}
+	.apps {
+		// position: relative;
+		margin-top: 15px;
+		margin-bottom: 8px;
+		width: 100%;
 
-        .circle-plus {
-            position: absolute;
-            width: 12px;
-            height: 12px;
-            right: 17px;
-            margin-top: -14px;
-            border-radius: 50%;
-            border: 1px solid $lightpurple;
-            color: $lightpurple;
-            
-            p {
-                margin-left: 2px;
-                margin-top: -3px;
-            }
-        }  
-    }
+		p {
+			margin-left: 20px;
+			color: $lightpurple;
+			font-size: 12px;
+		}
 
-    .channels {
-        position: relative;
+		.circle-plus {
+			position: absolute;
+			width: 12px;
+			height: 12px;
+			right: 17px;
+			margin-top: -14px;
+			border-radius: 50%;
+			border: 1px solid $lightpurple;
+			color: $lightpurple;
+			
+			p {
+				margin-left: 2px;
+				margin-top: -3px;
+			}
+		}  
+	}
 
-        p {
-            color: $lightpurple;
-            font-size: 12px;
-            margin-left: $margin-left;
-            margin-top: 10px;
-        }
+	.channels {
+		position: relative;
 
-        .circle-plus {
-            position: absolute;
-            width: 12px;
-            height: 12px;
-            right: 17px;
-            margin-top: -14px;
-            border-radius: 50%;
-            border: 1px solid $lightpurple;
-            color: $lightpurple;
+		p {
+			margin-left: $margin-left;
+			margin-top: 10px;
+			color: $lightpurple;
+			font-size: 12px;
+		}
 
-            p {
-                margin-left: 2px;
-                margin-top: -3px;
-            }
-        }
+		.circle-plus {
+			position: absolute;
+			margin-top: -14px;
+			right: 17px;
+			width: 12px;
+			height: 12px;
+			border-radius: 50%;
+			border: 1px solid $lightpurple;
+			color: $lightpurple;
 
-        .item {
-            margin-left: 2px;
-            margin-bottom: -1px;
+			p {
+				margin-left: 2px;
+				margin-top: -3px;
+			}
+		}
 
-            &:nth-child(3) p { color: $white; }
+		.item {
+			margin-left: 2px;
+			margin-bottom: -1px;
 
-            &:nth-child(9) p {
-                margin-left: 27px; 
-            }
+			&:nth-child(3) p { color: $white; }
 
-            &:nth-child(10) p {
-                margin-left: 27px; 
-            }
+			&:nth-child(9) p { margin-left: 27px; }
 
-            i{
-                position: absolute;
-                color: $lightpurple;
-                font-size: 12px;
-                margin-top: 10px;
-                margin-left: 14px;
-            }
-        }
-    }
+			&:nth-child(10) p { margin-left: 27px; }
 
-    .messages {
-        position: relative;
-        color: $lightpurple;
-        font-size: 12px;
-        margin-left: $margin-left;
-        margin-top: 29px;
+			i{
+				position: absolute;
+				margin-top: 10px;
+				margin-left: 14px;
+				font-size: 12px;
+				color: $lightpurple;
+			}
+		}
+	}
 
-        li {
-            margin-bottom: 10px;
+	.messages {
+		position: relative;
+		margin-left: $margin-left;
+		margin-top: 29px;
+		font-size: 12px;
+		color: $lightpurple;
 
-        }
+		li { margin-bottom: 10px; }
 
-        
-        .tittle-messages {
-            
-            .circle-plus {
-                position: absolute;
-                width: 12px;
-                height: 12px;
-                right: 17px;
-                margin-top: -14px;
-                border-radius: 50%;
-                border: 1px solid $lightpurple;
-                color: $lightpurple;
-                
-                p {
-                    margin-left: 2px;
-                    margin-top: -3px;
-                }
-            }  
-            
-        }
-        
-        i {
-            position: absolute;
-            font-size: 10px;
-            color: $turquoise;
-        }
-        
-        .users {
-            
-            p { margin-left: 13px; }
+		.tittle-messages {
+				
+			.circle-plus {
+				position: absolute;
+				width: 12px;
+				height: 12px;
+				margin-top: -14px;
+				right: 17px;
+				color: $lightpurple;
+				border-radius: 50%;
+				border: 1px solid $lightpurple;
+					
+				p {
+					margin-left: 2px;
+					margin-top: -3px;
+				}
+			}  
+				
+		}
+		
+		i {
+			position: absolute;
+			font-size: 10px;
+			color: $turquoise;
+		}
+		
+		.users {
+				
+			p { margin-left: 13px; }
 
-            &:nth-child(8) {
-                
-                background-color: $turquoise;
-            
-                p{
-                    color: $white;
-                }
-            }
-           
-            .im-heart { margin-top: 3px; }
-            
-            .im-thumb-up {
-                margin-left: 80px;
-                margin-top: -13px; 
-                color: #b2975c;
-            }
+			&:nth-child(8) { 
+				background-color: $turquoise;
+		
+				p{ color: $white; }
+			}
 
-            .im-home {
-                margin-left: 84px;
-                margin-top: -13px; 
-                color: #a68b7f;
-            }
+			&:nth-child(5) { 
 
-            .im-sun {
-                margin-left: 105px;
-                margin-top: -12px; 
-                color:  #9e7d72;
-            }
+				p { color: $extralightpurple; }
 
-            .im-smiley-o {
-                margin-left: 132px;
-                margin-top: -12px; 
-                color:  #bca770;
-            }
+			}
+			&:nth-child(7) { 
 
-            .circle-green {
-                position: absolute;
-                width: 8px;
-                height: 8px;
-                margin-left: 1px;
-                margin-top: -11px;
-                background-color: $turquoise;
-                border-radius: 50%;
-            }
+				p { color: $extralightpurple; }
 
-            .circle-empty {
-                position: absolute;
-                width: 8px;
-                height: 8px;
-                margin-left: 2px;
-                margin-top: -10px;
-                border: 1px solid $lightpurple;
-                background-color: transparent;
-                border-radius: 50%;
+			}
+			&:nth-child(11) { 
 
-                &.sleep p {
-                    margin-left: 4px;
-                    margin-top: -6px;
-                    font-size: 9px;
-                    text-shadow:
-                                    -1px -1px 0 $purple,  
-                                    1px -1px 0 $purple,
-                                    -1px 1px 0 $purple,
-                                    1px 1px 0 $purple;
-                }
-            }
+				p { color: $extralightpurple; }
 
-            .circle-white {
-                position: absolute;
-                width: 8px;
-                height: 8px;
-                margin-left: 1px;
-                margin-top: -11px;
-                background-color: $white;
-                border-radius: 50%;
-            }
+			}
+			.im-heart { margin-top: 3px; }
+				
+			.im-thumb-up {
+				margin-left: 80px;
+				margin-top: -13px; 
+				color: #b2975c;
+			}
 
-            .square-number {
-                position: absolute;
-                width: 8px;
-                height: 9px;
-                margin-left: 2px;
-                margin-top: -11px;
-                border: 1px solid $lightpurple;
-                background-color: transparent;
-                border-radius: 2px;
+			.im-home {
+				margin-left: 84px;
+				margin-top: -13px; 
+				color: #a68b7f;
+			}
 
-                p {
-                    margin-left: 1px;
-                    font-size: 6px;
-                    margin-top: 0;
-                }
-            }
-        }
-    }
-    
-    .special-user {
-        height: 25px;
-        margin-left: -17px;
-        background-color: $turquoise;
+			.im-sun {
+				margin-left: 105px;
+				margin-top: -12px; 
+				color:  #9e7d72;
+			}
 
-        .im-phone {
-            margin-left: 99px;
-            margin-top: -13px; 
-            color: transparent;
-            text-shadow:6px 0px 0px $lightgrey;
-        }
+			.im-smiley-o {
+				margin-left: 132px;
+				margin-top: -12px; 
+				color:  #bca770;
+			}
 
-        p {
-            margin-left: 30px;
-            padding-top: 5px;
-            color: $white;
-        }
+			.circle-green {
+				position: absolute;
+				width: 8px;
+				height: 8px;
+				margin-left: 1px;
+				margin-top: -11px;
+				background-color: $turquoise;
+				border-radius: 50%;
+			}
 
-        .circle-white {
-            position: absolute;
-            width: 8px;
-            height: 8px;
-            margin-left: 18px;
-            margin-top: -11px;
-            background-color: $white;
-            border-radius: 50%;
-        }
-    }
+			.circle-empty {
+				position: absolute;
+				width: 8px;
+				height: 8px;
+				margin-left: 2px;
+				margin-top: -10px;
+				border: 1px solid $lightpurple;
+				background-color: transparent;
+				border-radius: 50%;
 
+				&.sleep p {
+					margin-left: 4px;
+					margin-top: -6px;
+					font-size: 9px;
+					text-shadow:
+												-1px -1px 0 $purple,  
+												1px -1px 0 $purple,
+												-1px 1px 0 $purple,
+												1px 1px 0 $purple;
+				}
+			}
+
+			.circle-white {
+					position: absolute;
+					margin-left: 1px;
+					margin-top: -11px;
+					width: 8px;
+					height: 8px;
+					background-color: $white;
+					border-radius: 50%;
+			}
+
+			.square-number {
+				position: absolute;
+				width: 8px;
+				height: 9px;
+				margin-left: 2px;
+				margin-top: -11px;
+				border: 1px solid $lightpurple;
+				background-color: transparent;
+				border-radius: 2px;
+
+				p {
+					margin-left: 1px;
+					font-size: 6px;
+					margin-top: 0;
+				}
+			}
+		}
+	}
+	
+	.special-user {
+		height: 25px;
+		margin-left: -17px;
+		background-color: $turquoise;
+
+		.im-phone {
+			margin-left: 99px;
+			margin-top: -13px; 
+			color: transparent;
+			text-shadow:6px 0px 0px $lightgrey;
+		}
+
+		p {
+			margin-left: 30px;
+			padding-top: 5px;
+			color: $white;
+		}
+
+		.circle-white {
+			position: absolute;
+			width: 8px;
+			height: 8px;
+			margin-left: 18px;
+			margin-top: -11px;
+			background-color: $white;
+			border-radius: 50%;
+		}
+	}
 }

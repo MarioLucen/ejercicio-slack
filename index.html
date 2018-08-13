@@ -10,203 +10,295 @@
 </head>
 
 <body>
-  <div class="header">
-    <p>Slack-GLEAM AI</p>
-    <div class="buttons-header">
-      <button></button>
-      <button></button>
-      <button></button>
+  <div class="aplication-container">
+    <!-- header -->
+    <div class="header">
+      <p>Slack-GLEAM AI</p>
+      <div class="buttons-header">
+        <button></button>
+        <button></button>
+        <button></button>
+      </div>
     </div>
-  </div>
+    <!-- menu -->
+    <div class="menu-wrapper">
+      <button class="button-menu-header">
+        <div class="tittle-menu">
+          <p>GLEAM AI</p>
+          <i class="im im-angle-down"></i>
+        </div>
+        <i class="im im-bell"></i>
+        <div class="name">
+          <div></div>
+          <p>Edgar</p>
+          <i class="im im-thumb-up"></i>
+        </div>
+      </button>
 
-  <div class="menu-wrapper">
-    <button class="button-menu-header">
-      <div class="tittle-menu">
-        <p>GLEAM AI</p>
-        <i class="im im-angle-down"></i>
+      <div class="jump-to">
+        <input type="text" id="jump-to" placeholder="Jump to...">
+        <i class="im im-data-validate"></i>
       </div>
-      <i class="im im-bell"></i>
-      <div class="name">
-        <div></div>
-        <p>Edgar</p>
-        <i class="im im-thumb-up"></i>
-      </div>
-    </button>
-
-    <div class="jump-to">
-      <input type="text" id="jump-to" placeholder="Jump to...">
-      <i class="im im-data-validate"></i>
-    </div>
 
 
-    <button class="all-threads">
-      <p>All Threads</p>
-      <i class="im im-wechat"></i>
-    </button>
+      <button class="all-threads">
+        <p>All Threads</p>
+        <i class="im im-wechat"></i>
+      </button>
 
 
-    <ul>
-      <div class="channels">
-        <li>
-          <button>
-            <p>Channels</p>
-            <div class="circle-plus">
-              <p>+</p>
-            </div>
-          </button>
-        </li>
-        <li class="item">
-          <button>
-            <p># design</p>
-          </button>
-        </li>
-        <li class="item">
-          <button>
-            <p># devel</p>
-          </button>
-        </li>
-        <li class="item">
-          <button>
-            <p># general</p>
-          </button>
-        </li>
-        <li class="item">
-          <button>
-            <p># hiring</p>
-          </button>
-        </li>
-        <li class="item">
-          <button>
-            <p># onboarding</p>
-          </button>
-        </li>
-        <li class="item">
-          <button>
-            <p># outreach</p>
-          </button>
-        </li>
-        <li class="item">
-          <button>
-            <p># random</p>
-          </button>
-        </li>
-        <li class="item">
-          <button>
-            <i class="im im-lock"></i>
-            <p>security</p>
-          </button>
-        </li>
-        <li class="item">
-          <button>
-            <i class="im im-lock"></i>
-            <p>strategy</p>
-          </button>
-        </li>
-        <li class="item">
-          <button>
-            <p># teldat_project</p>
-          </button>
-        </li>
-      </div>
-    </ul>
+      <ul>
+        <div class="channels">
+          <li>
+            <button>
+              <p>Channels</p>
+              <div class="circle-plus">
+                <p>+</p>
+              </div>
+            </button>
+          </li>
+          <li class="item">
+            <button>
+              <p># design</p>
+            </button>
+          </li>
+          <li class="item">
+            <button>
+              <p># devel</p>
+            </button>
+          </li>
+          <li class="item">
+            <button>
+              <p># general</p>
+            </button>
+          </li>
+          <li class="item">
+            <button>
+              <p># hiring</p>
+            </button>
+          </li>
+          <li class="item">
+            <button>
+              <p># onboarding</p>
+            </button>
+          </li>
+          <li class="item">
+            <button>
+              <p># outreach</p>
+            </button>
+          </li>
+          <li class="item">
+            <button>
+              <p># random</p>
+            </button>
+          </li>
+          <li class="item">
+            <button>
+              <i class="im im-lock"></i>
+              <p>security</p>
+            </button>
+          </li>
+          <li class="item">
+            <button>
+              <i class="im im-lock"></i>
+              <p>strategy</p>
+            </button>
+          </li>
+          <li class="item">
+            <button>
+              <p># teldat_project</p>
+            </button>
+          </li>
+        </div>
+      </ul>
 
-    <ul>
-      <div class="messages">
-        <li class="tittle-messages">
-          <button>
-            <p>Direct Messages</p>
-            <div class="circle-plus">
-              <p>+</p>
-            </div>
-          </button>
-        </li>
-        <li class="users">
-          <button>
-            <i class="im im-heart"></i>
-            <p>slackbot</p>
-          </button>
-        </li>
-        <li class="users">
-          <button>
-            <p>Edgar (you)</p>
-            <div class="circle-green"></div>
-            <i class="im im-thumb-up"></i>
-          </button>
-        </li>
-        <li class="users">
-          <button>
-            <p>Hugo Rubio</p>
-            <div class="circle-green"></div>
-          </button>
-        </li>
-        <li class="users">
-          <button>
-            <p>Iñaki Murcia</p>
-            <div class="circle-empty"></div>
-            <i class="im im-home"></i>
-          </button>
-        </li>
-        <li class="users">
-          <button>
-            <p>Iñaki Murcia, Mario Luc...</p>
-            <div class="square-number">
-              <p>3</p>
-            </div>
-          </button>
-        </li>
-        <li class="users">
-          <button>
-            <p>Javier de la Rosa</p>
-            <div class="circle-empty sleep">
-              <p>z</p>
-            </div>
-            <i class="im im-sun"></i>
-          </button>
-        </li>
+      <ul>
+        <div class="messages">
+          <li class="tittle-messages">
+            <button>
+              <p>Direct Messages</p>
+              <div class="circle-plus">
+                <p>+</p>
+              </div>
+            </button>
+          </li>
+          <li class="users">
+            <button>
+              <i class="im im-heart"></i>
+              <p>slackbot</p>
+            </button>
+          </li>
+          <li class="users">
+            <button>
+              <p>Edgar (you)</p>
+              <div class="circle-green"></div>
+              <i class="im im-thumb-up"></i>
+            </button>
+          </li>
+          <li class="users">
+            <button>
+              <p>Hugo Rubio</p>
+              <div class="circle-green"></div>
+            </button>
+          </li>
+          <li class="users">
+            <button>
+              <p>Iñaki Murcia</p>
+              <div class="circle-empty"></div>
+              <i class="im im-home"></i>
+            </button>
+          </li>
+          <li class="users">
+            <button>
+              <p>Iñaki Murcia, Mario Luc...</p>
+              <div class="square-number">
+                <p>3</p>
+              </div>
+            </button>
+          </li>
+          <li class="users">
+            <button>
+              <p>Javier de la Rosa</p>
+              <div class="circle-empty sleep">
+                <p>z</p>
+              </div>
+              <i class="im im-sun"></i>
+            </button>
+          </li>
 
-        <li class="special-user">
-          <button>
-            <p>Mario Lucena</p>
-            <div class="circle-white"></div>
-            <i class="im im-phone"></i>
-          </button>
-        </li>
+          <li class="special-user">
+            <button>
+              <p>Mario Lucena</p>
+              <div class="circle-white"></div>
+              <i class="im im-phone"></i>
+            </button>
+          </li>
 
-        <li class="users">
-          <button>
-            <p>Rafa Torres</p>
-            <div class="circle-green"></div>
-          </button>
-        </li>
-        <li class="users">
-          <button>
-            <p>Sergio Jimenez Barrio</p>
-            <div class="circle-green"></div>
-            <i class="im im-smiley-o"></i>
-          </button>
-        </li>
-        <li class="users">
-          <button>
-            <p>Hugo Rubio, Sergio Jim...</p>
-            <div class="square-number">
-              <p>5</p>
-            </div>
-          </button>
-        </li>
-      </div>
-    </ul>
+          <li class="users">
+            <button>
+              <p>Rafa Torres</p>
+              <div class="circle-green"></div>
+            </button>
+          </li>
+          <li class="users">
+            <button>
+              <p>Sergio Jimenez Barrio</p>
+              <div class="circle-green"></div>
+              <i class="im im-smiley-o"></i>
+            </button>
+          </li>
+          <li class="users">
+            <button>
+              <p>Hugo Rubio, Sergio Jim...</p>
+              <div class="square-number">
+                <p>5</p>
+              </div>
+            </button>
+          </li>
+        </div>
+      </ul>
 
-    <button class="invite">
-      <p>Invite People</p>
-      <p>+</p>
-    </button>
-
-    <button class="apps">
-      <p>Apps</p>
-      <div class="circle-plus">
+      <button class="invite">
+        <p>Invite People</p>
         <p>+</p>
+      </button>
+
+      <button class="apps">
+        <p>Apps</p>
+        <div class="circle-plus">
+          <p>+</p>
+        </div>
+      </button>
+    </div>
+    <!-- header-chat -->
+    <div class="header-chat">
+      <div class="user-info">
+        <h3>Mario Lucena</h3>
+        <ul>
+          <li>
+            <i class="im im-star-o"></i>
+          </li>
+          <li>
+            <div class="circle-green"></div>
+            <p>active</p>
+          </li>
+          <li>
+            <p>MarioL.</p>
+          </li>
+        </ul>
       </div>
-    </button>
+
+      <div class="toolbar">
+        <ul>
+          <li>
+            <button class="btn icon">
+              <i class="im im-phone"></i>
+            </button>
+          </li>
+          <li>
+            <button class="btn icon">
+              <i class="im im-info"></i>
+            </button>
+          </li>
+          <li>
+            <button class="btn icon">
+              <i class="im im-gear"></i>
+            </button>
+          </li>
+          <li>
+            <div class="search">
+              <input type="text" id="search" placeholder="Search">
+              <i class="im im-magnifier"></i>
+            </div>
+          </li>
+          <li>
+            <button class="btn icon">
+              <i class="im im-star-o"></i>
+            </button>
+          </li>
+          <li>
+            <button class="btn icon">
+              <i class="im im-menu-dot-v"></i>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- main -->
+    <div class="main-chat"></div>
+    <!-- menu right -->
+    <div class="menu-right">
+      <div class="main-menu">
+        <div class="info-contact">
+          <div class="close">
+            <p>About this conversation</p>
+            <button>
+              <i class="im im-x-mark"></i>
+            </button>
+          </div>
+          <div class="profile">
+            <img src="img/MarioCV-Recuperadoparaslack.png" alt="cara">
+            <p>Mario Lucena</p>
+            <div class="circle-green"></div>
+            <p>Mario.L</p>
+          </div>
+          <div class="date">
+            <p>Time zone</p>
+            <p>3:56 PM local time</p>
+          </div>
+        </div>
+        <button>
+          <i class="im im-pin"></i>
+          <p>Pinned Items</p>
+          <i class="im im-care-right"></i>
+        </button>
+        <button>
+          <i class="im im-files-o"></i>
+          <p>Shared Files</p>
+          <i class="im im-care-right"></i>
+        </button>
+      </div>
+    </div>
   </div>
 </body>
 

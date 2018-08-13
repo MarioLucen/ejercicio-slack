@@ -1,0 +1,22 @@
+
+.btn {
+    position: relative;
+    min-width: 16px;
+    min-height: 16px;
+    
+    &:hover { cursor: pointer; }
+
+    &.icon {
+        width: 18px;
+        height: 18px;
+
+        i {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            font-size: $icon-size;
+            color: $maingrey;
+            transform: translate3d(-50%,-50%,0);
+        }
+    }
+}

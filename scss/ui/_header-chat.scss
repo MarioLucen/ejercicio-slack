@@ -1,0 +1,116 @@
+
+.header-chat {
+	position: absolute;
+	height: 54px;
+    border-bottom: 1px solid $lightgrey;
+    width: calc(100% - 200px);
+    left: 200px;
+	top: 22px;
+	padding: 8px;
+	display: flex;
+    justify-content: space-between;
+    align-items: center;
+	
+	.user-info {
+		display: inline-block;
+
+		h3 {
+			font-size: 14px;
+			font-weight: 900;
+		}
+
+		li { height: 10px; }
+
+		p { color: $grey; }
+		
+		& li:first-child {
+			margin-right: 68px;
+				
+			i {
+				position: absolute;
+				font-size: 12px;
+				color: $grey;
+				margin-right: 5px;
+				margin-top: 4px;
+			}
+		}
+		
+		& li:nth-child(2) {
+			border-left: 1px solid grey;
+			margin-left: 18px;
+			margin-top: -4px;
+
+			.circle-green {
+				position: absolute;
+				width: 9px;
+				height: 9px;
+				margin-left: 5px;
+				background-color: #97c9a5;
+				border-radius: 50%;
+			}
+				
+			p {
+				position: absolute;
+				margin-left: 18px;
+				margin-top: -2px;
+			}
+				
+		}
+			
+			& li:last-child {
+				position: absolute;
+				margin-top: -10px;
+				border-left: 1px solid $grey;
+				margin-left: 68px;
+
+				p {
+					margin-top: -2px;
+					margin-left: 6px;
+				}
+			}
+
+	}
+
+	.toolbar {
+		display: inline-block;
+
+		ul{
+			display: flex;
+
+			li {
+				margin-left: 6px;
+			}
+
+			& li:nth-child(2) {
+				
+				button{
+					background-color: $maingrey;
+					border-radius: 2px;
+
+					i {
+						color: $white;
+					}
+				}
+			}
+		}
+	}
+
+	.search {
+		color: $maingrey;
+		
+		i {
+			position: absolute;
+			font-size: 12px;
+			margin-top: -15px;
+			margin-left: 5px;
+		}
+		
+		input {
+			width: 150px;
+			height: 19px;
+			border-radius: 2px;
+			border: 0.5px solid $maingrey;
+			padding-left: 20px;
+			}
+	}
+}    
