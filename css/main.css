@@ -1757,18 +1757,71 @@ body {
             font-size: 14px;
             color: #989a9b; }
       .menu-right .main-menu .info-contact .profile {
-        height: 50px;
-        border-bottom: 1px solid #d4d2d4;
-        padding: 8px; }
+        position: relative;
+        height: 60px;
+        border-bottom: 1px solid #d4d2d4; }
         .menu-right .main-menu .info-contact .profile img {
-          width: 48px;
-          height: 38px;
+          position: absolute;
+          width: 40px;
+          height: 40px;
           border-radius: 2px;
-          margin-top: -2px; }
-        .menu-right .main-menu .info-contact .profile p {
+          top: 10px;
+          left: 10px; }
+        .menu-right .main-menu .info-contact .profile .user-data {
+          position: absolute;
+          top: 20px;
+          left: 60px;
           font-size: 12px;
-          font-weight: 900;
-          width: 80px; }
+          font-weight: 600; }
+          .menu-right .main-menu .info-contact .profile .user-data p:last-child {
+            position: absolute;
+            top: 13px;
+            color: #989a9b;
+            font-weight: 600; }
+          .menu-right .main-menu .info-contact .profile .user-data .circle-green {
+            position: absolute;
+            width: 8px;
+            height: 8px;
+            left: 79px;
+            top: 4px;
+            background-color: #52928c;
+            border-radius: 50%; }
+      .menu-right .main-menu .info-contact .date {
+        height: 22px;
+        display: flex;
+        flex-direction: row;
+        padding: 4px;
+        margin-left: 4px; }
+        .menu-right .main-menu .info-contact .date p:first-child {
+          margin-right: 3px;
+          color: #989a9b; }
+    .menu-right .main-menu .drop {
+      width: 100%; }
+      .menu-right .main-menu .drop button {
+        position: relative;
+        width: 100%;
+        height: 35px;
+        border-bottom: 1px solid #d4d2d4; }
+        .menu-right .main-menu .drop button i:first-child {
+          position: absolute;
+          left: 12px;
+          top: 8px;
+          font-size: 14px;
+          color: #f25826; }
+        .menu-right .main-menu .drop button i:last-child {
+          position: absolute;
+          font-size: 14px;
+          right: 8px;
+          top: 8px;
+          color: #989a9b; }
+        .menu-right .main-menu .drop button p {
+          position: absolute;
+          top: 4px;
+          left: 30px;
+          font-size: 14px;
+          margin-top: 3px; }
+      .menu-right .main-menu .drop button:last-child i:first-child {
+        color: #e99500; }
 
 .main-chat {
   width: calc(100% - 475px);
