@@ -1,8 +1,56 @@
 
 .main-chat {
     width: calc(100% - 475px);
-    height: 100%;
+    height: calc(100vh - 76px);
+    overflow: scroll;
     position: absolute;
     right: 275px;
     top: 76px;
+
+    img {
+        width: 30px;
+        height: 30px;
+        border-radius: 2px;
+    }
+
+    h2 {
+        position: absolute;
+        font-size: 12px;
+        font-weight: 600;
+        width: auto;
+        top: -9px;
+        text-align: center;
+        background-color: #ffffff;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 0 10px
+    }
+
+    .day {
+        margin-left: 10px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .yesterday {
+        position: relative;
+    }
+
+    .today {
+        position: relative;
+        border-top: 1px solid $lightgrey;
+        height: 100%;
+        
+        .text-chat {
+            font-size: 11px;
+            margin-left: 34px;
+            margin-top: -13px;
+            font-size: 11px;
+
+            p:nth-child(2) {
+                margin-top: 6px;
+                margin-bottom: 6px;
+            }
+        }
+    }
 }

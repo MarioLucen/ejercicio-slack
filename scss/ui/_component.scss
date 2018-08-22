@@ -1,0 +1,95 @@
+
+.first-profile {
+    position: relative;
+
+    .user-profile {
+        position: absolute;
+        display: inline-flex;
+        margin-left: 4px;
+        
+        p {
+            font-size: 11px;
+            font-weight: 900;
+        }
+        
+        p:last-child {
+            font-size: 10px;
+            color: $maingrey;
+            font-weight: 400;
+        }
+        
+        i {
+            margin-right: 8px;
+            margin-left: 8px;
+            margin-top: 0px;
+            font-size: 11px;
+            color: #f6ca56;
+        }
+    }
+}
+
+.user-profile.phone i {
+    color: $lightgrey;
+}
+
+.call {
+    position: absolute;
+    display: inline-flex;
+    left: 34px;
+    top: 16px;
+
+    p {
+        font-size: 11px;
+        color: $maingrey;
+    }
+
+    i {
+        margin-left: 8px;
+        margin-top: 5px;
+        font-size: 5px;
+        color: $maingrey;
+    }
+}
+
+.box-call {
+    position: relative;
+    width: 70%;
+    height: 60px;
+    padding: 10px;
+    left: 30px;
+    border: 1px solid $lightgrey;
+
+    i {
+        font-size: 14px;
+        border: 1px solid $maingrey;
+        border-radius: 50%;
+        color: $maingrey;
+        padding: 7px;
+    }
+    
+    .call-info{
+        position: absolute;
+        left: 50px;
+        top: 12px;
+
+        p:last-child {
+            color: $maingrey;
+            margin-top: 3px;
+        }
+    }
+}
+
+.box-call.entry {
+    i {
+        border-color: #a0c5ae;
+        color: #a0c5ae;
+    }
+
+    p:first-child {
+        color: $lightblue;
+    }
+}
+.message {
+    position: relative;
+    margin-bottom: 6px;
+}

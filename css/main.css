@@ -1825,7 +1825,110 @@ body {
 
 .main-chat {
   width: calc(100% - 475px);
-  height: 100%;
+  height: calc(100vh - 76px);
+  overflow: scroll;
   position: absolute;
   right: 275px;
   top: 76px; }
+  .main-chat img {
+    width: 30px;
+    height: 30px;
+    border-radius: 2px; }
+  .main-chat h2 {
+    position: absolute;
+    font-size: 12px;
+    font-weight: 600;
+    width: auto;
+    top: -9px;
+    text-align: center;
+    background-color: #ffffff;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 0 10px; }
+  .main-chat .day {
+    margin-left: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px; }
+  .main-chat .yesterday {
+    position: relative; }
+  .main-chat .today {
+    position: relative;
+    border-top: 1px solid #d4d2d4;
+    height: 100%; }
+    .main-chat .today .text-chat {
+      font-size: 11px;
+      margin-left: 34px;
+      margin-top: -13px;
+      font-size: 11px; }
+      .main-chat .today .text-chat p:nth-child(2) {
+        margin-top: 6px;
+        margin-bottom: 6px; }
+
+.first-profile {
+  position: relative; }
+  .first-profile .user-profile {
+    position: absolute;
+    display: inline-flex;
+    margin-left: 4px; }
+    .first-profile .user-profile p {
+      font-size: 11px;
+      font-weight: 900; }
+    .first-profile .user-profile p:last-child {
+      font-size: 10px;
+      color: #989a9b;
+      font-weight: 400; }
+    .first-profile .user-profile i {
+      margin-right: 8px;
+      margin-left: 8px;
+      margin-top: 0px;
+      font-size: 11px;
+      color: #f6ca56; }
+
+.user-profile.phone i {
+  color: #d4d2d4; }
+
+.call {
+  position: absolute;
+  display: inline-flex;
+  left: 34px;
+  top: 16px; }
+  .call p {
+    font-size: 11px;
+    color: #989a9b; }
+  .call i {
+    margin-left: 8px;
+    margin-top: 5px;
+    font-size: 5px;
+    color: #989a9b; }
+
+.box-call {
+  position: relative;
+  width: 70%;
+  height: 60px;
+  padding: 10px;
+  left: 30px;
+  border: 1px solid #d4d2d4; }
+  .box-call i {
+    font-size: 14px;
+    border: 1px solid #989a9b;
+    border-radius: 50%;
+    color: #989a9b;
+    padding: 7px; }
+  .box-call .call-info {
+    position: absolute;
+    left: 50px;
+    top: 12px; }
+    .box-call .call-info p:last-child {
+      color: #989a9b;
+      margin-top: 3px; }
+
+.box-call.entry i {
+  border-color: #a0c5ae;
+  color: #a0c5ae; }
+
+.box-call.entry p:first-child {
+  color: #3175b3; }
+
+.message {
+  position: relative;
+  margin-bottom: 6px; }
