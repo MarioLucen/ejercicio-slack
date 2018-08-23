@@ -1917,16 +1917,18 @@ body {
           font-size: 2px; }
     .main-chat .today .box-message {
       position: fixed;
-      width: 529px;
+      width: calc(100% - 502px);
       height: 100vh;
       top: 544px;
+      left: 200px;
       margin-bottom: 15px;
       background-color: white; }
     .main-chat .today .direct-message {
       position: fixed;
-      width: 529px;
+      width: calc(100% - 512px);
       height: 31px;
       top: 544px;
+      left: 210px;
       margin-bottom: 15px;
       border: 1px solid #989a9b;
       border-radius: 4px;
@@ -2002,7 +2004,8 @@ body {
 
 .box-call {
   position: relative;
-  width: 80%;
+  width: 100%;
+  max-width: 420px;
   height: 60px;
   left: 30px;
   padding: 11px;
