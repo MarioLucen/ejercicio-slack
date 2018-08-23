@@ -1,11 +1,11 @@
 
 .main-chat {
+    position: absolute;
     width: calc(100% - 475px);
     height: calc(100vh - 76px);
-    overflow: scroll;
-    position: absolute;
     right: 275px;
     top: 76px;
+    overflow-y: scroll;
 
     img {
         width: 30px;
@@ -15,19 +15,20 @@
 
     h2 {
         position: absolute;
-        font-size: 12px;
-        font-weight: 600;
         width: auto;
         top: -9px;
-        text-align: center;
-        background-color: #ffffff;
         left: 50%;
         transform: translateX(-50%);
-        padding: 0 10px
+        padding: 0 10px;
+        text-align: center;
+        font-weight: 600;
+        font-size: 12px;
+        background-color: #ffffff;
     }
 
     .day {
         margin-left: 10px;
+        margin-right: 10px;
         padding-top: 20px;
         padding-bottom: 20px;
     }
@@ -38,11 +39,10 @@
 
     .today {
         position: relative;
-        border-top: 1px solid $lightgrey;
         height: 100%;
+        border-top: 1px solid $lightgrey;
         
         .text-chat {
-            font-size: 11px;
             margin-left: 34px;
             margin-top: -13px;
             font-size: 11px;
@@ -50,6 +50,152 @@
             p:nth-child(2) {
                 margin-top: 6px;
                 margin-bottom: 6px;
+            }
+        }
+        
+        .text-chat.blue {
+            color: $blue;
+        }
+
+        .box-call.linked {
+            height: 80px;
+            top: 6px;
+            border: none;
+            border-left: 3px solid $lightgrey;
+
+            .title-link {
+                position: absolute;
+                display: inline-flex;
+                top: 0px;
+
+                img {
+                    width: 11px;
+                    height: 11px;
+                    margin-top: 1px;
+                    margin-right: 2px;
+                }
+
+                p {
+                    color: $maingrey;
+                }
+            }
+
+            .text-link {
+                margin-top: 6px;
+                
+                p:first-child {
+                    color: $blue;
+                }
+
+                p:nth-child(2) {
+                    margin-top: 6px;
+                    margin-bottom: 6px;   
+                }
+
+                p:last-child {
+                    margin-top: 6px;
+                    font-size: 9px;
+                    color: $maingrey;
+                }
+            }
+
+            .js-box {
+                position: absolute;
+                height: 20px;
+                width: 60px;
+                left: 83%;
+                top: 0px;
+                background-color: #f8d147;
+                border-radius: 2px;
+
+                div:first-child {
+                    width: 25%;
+                    height: 70%;
+                    border: 0.5px solid black;
+                    transform: translate3d(70%, 25%, 0);
+
+                    p {
+                        margin-left: 5px;
+                        margin-top: 3px;
+                        font-size: 8px;
+                        font-weight: 900;
+                    }
+                }
+
+                div:last-child {
+                    position: absolute;
+                    left: 46%;
+                    top: 10px;
+                    font-size: 2px;
+                }
+            }
+        }
+        
+        .box-message {
+            position: fixed;
+            width: 529px;
+            height: 100vh;
+            top: 544px;
+            margin-bottom: 15px;
+            background-color: white;
+        }
+        .direct-message {
+            position: fixed ;
+            width: 529px;
+            height: 31px;
+            top: 544px;
+            margin-bottom: 15px;
+            border: 1px solid $maingrey;
+            border-radius: 4px;
+            background-color: white;
+
+            button:first-child {
+                position: absolute;
+                width: 40px;
+                height: 100%;
+                text-align: center;
+                border-right: 1px solid $maingrey;
+
+                p {
+                    font-size: 20px;
+                    color: $maingrey;
+                }
+
+            }
+
+            input {
+                position: absolute;
+                width: 70%;
+                border: none;
+                transform: translate3d(12%, 40%, 0);
+                font-size: 12px;
+                
+                ::-webkit-input-placeholder {
+                    color: $lightgrey;
+                }
+
+            }
+
+            button:nth-child(3) {
+                position: absolute;
+                top: 2px;
+                right: 32px;
+
+                p {
+                    font-size: 16px;
+                    color: $maingrey;
+                }
+            }
+
+            button:last-child {
+                position: absolute;
+                top: 7px;
+                right: 10px;
+
+                i {
+                    font-size: 14px;
+                    color: $maingrey;
+                }
             }
         }
     }

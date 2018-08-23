@@ -14,8 +14,8 @@
         
         p:last-child {
             font-size: 10px;
-            color: $maingrey;
             font-weight: 400;
+            color: $maingrey;
         }
         
         i {
@@ -35,8 +35,8 @@
 .call {
     position: absolute;
     display: inline-flex;
-    left: 34px;
     top: 16px;
+    left: 34px;
 
     p {
         font-size: 11px;
@@ -53,24 +53,24 @@
 
 .box-call {
     position: relative;
-    width: 70%;
+    width: 80%;
     height: 60px;
-    padding: 10px;
     left: 30px;
+    padding: 11px;
     border: 1px solid $lightgrey;
 
     i {
         font-size: 14px;
+        padding: 7px;
         border: 1px solid $maingrey;
         border-radius: 50%;
         color: $maingrey;
-        padding: 7px;
     }
     
     .call-info{
         position: absolute;
-        left: 50px;
         top: 12px;
+        left: 50px;
 
         p:last-child {
             color: $maingrey;
